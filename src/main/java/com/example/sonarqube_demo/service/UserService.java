@@ -25,7 +25,7 @@ public class UserService {
     
     public User createUser(User user) {
         // Code volontairement problématique pour démo SonarQube
-        String password = "hardcoded_password"; // Security Hotspot
+        // String password = "hardcoded_password"; // Security Hotspot
         
         if (user.getEmail() == null) { // Peut être simplifié
             throw new IllegalArgumentException("Email cannot be null");
